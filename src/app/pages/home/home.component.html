@@ -1,0 +1,348 @@
+<div class="container">
+
+    <!-- start side bar section one -->
+    <section class="sideBar">
+        <div>
+            <div class="logo">
+                <img src="assets/img/WhatsApp Image 2021-05-30 at 2.02.57 PM.jpeg">
+            </div>
+            <div class="Menu">
+                <p class="title">Menu</p>
+
+                <ul class="sideBarList">
+                    <li class="active">
+                        <i class="fa fa-home iconActive"></i>
+                        <a>Home</a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-comment"></i>
+                        <a>Massages</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <a>Profile</a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-bookmark"></i>
+                        <a>Save Post</a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-cog"></i>
+                        <a>Setting</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="account">
+                <p class="title">Account</p>
+
+                <div class="accountContent">
+                    <img src="assets/img/avatar.png" class="accountImg">
+                    <p>
+                        Ahmed <br>
+                        <span>
+                            @ahmedmo
+                        </span>
+                    </p>
+                </div>
+
+                <img src="assets/img/background1.jpg" class="getCoffedAppImg">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- end side bar section one -->
+
+
+    <!-- start middle section -->
+    <section class="midSection">
+
+        <div class="storyOFuser">
+            <div>
+                <img src="assets/img/avatar.png">
+                <p>You</p>
+            </div>
+            <div>
+                <img src="assets/img/avatar.png">
+                <p>Ahmed</p>
+            </div>
+            <div>
+                <img src="assets/img/avatar.png">
+                <p>Mohamed</p>
+            </div>
+            <div class="unShowStory">
+                <img src="assets/img/avatarGirl.png">
+                <p>Menna</p>
+            </div>
+            <div class="unShowStory">
+                <img src="assets/img/avatar.png">
+                <p>Omar</p>
+            </div>
+            <div class="unShowStory">
+                <img src="assets/img/avatarGirl.png">
+                <p>Maryem</p>
+            </div>
+            <div class="unShowStory">
+                <img src="assets/img/avatar.png">
+                <p>Marwan</p>
+            </div>
+            <div class="unShowStory">
+                <img src="assets/img/avatarGirl.png">
+                <p>Dina</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- menu of feeds -->
+        <div class="menuFeeds">
+            <p>Feeds</p>
+            <ul>
+                <li class="item active">Popular</li>
+                <li class="item">Newest</li>
+                <li class="item">Following</li>
+                <li class="item">All</li>
+            </ul>
+        </div>
+
+        <!-- feeds content -->
+        <div class="FeedsContent">
+            <div class="item">
+                <img class="photoIsLike" src="assets/img/background1.jpg">
+                <div class="itemOfFeeds">
+                    <div class="userPhoto">
+                        <img src="assets/img/avatar.png">
+                    </div>
+                    <div class="userName">
+                        <p>omar ahmed</p>
+                    </div>
+                    <div class="likeAndComment">
+                        <span>
+                            <i class="fa fa-heart" 
+                            [ngClass]="{
+                                'likeActive': image1Clicked
+                            }"
+                            (click)="likeImage('image1')"></i>
+                            {{counterImage1}}
+                        </span>
+                        <span>
+                            <i class="fa fa-comment"></i>
+                            100
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="photoIsLike" src="assets/img/background2.jpg">
+                <div class="itemOfFeeds">
+                    <div class="userPhoto">
+                        <img src="assets/img/avatar.png">
+                    </div>
+                    <div class="userName">
+                        <p>mohamed mostafa</p>
+                    </div>
+                    <div class="likeAndComment">
+                        <span>
+                            <i class="fa fa-heart" 
+                            [ngClass]="{
+                                'likeActive': image2Clicked
+                            }"
+                            (click)="likeImage('image2')"></i>
+                            {{counterImage2}}
+                        </span>
+                        <span>
+                            <i class="fa fa-comment"></i>
+                            100
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="photoIsLike" src="assets/img/background2.jpg">
+                <div class="itemOfFeeds">
+                    <div class="userPhoto">
+                        <img src="assets/img/avatarGirl.png">
+                    </div>
+                    <div class="userName">
+                        <p>ahmed mostafa</p>
+                    </div>
+                    <div class="likeAndComment">
+                        <span>
+                            <i class="fa fa-heart" 
+                            [ngClass]="{
+                                'likeActive': image3Clicked
+                            }"
+                             (click)="likeImage('image3')"></i>
+                            {{counterImage3}}
+                        </span>
+                        <span>
+                            <i class="fa fa-comment"></i>
+                            100
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="photoIsLike" src="assets/img/background1.jpg">
+                <div class="itemOfFeeds">
+                    <div class="userPhoto">
+                        <img src="assets/img/avatarGirl.png">
+                    </div>
+                    <div class="userName">
+                        <p>mazen mohamed</p>
+                    </div>
+                    <div class="likeAndComment">
+                        <span>
+                            <i class="fa fa-heart" 
+                            [ngClass]="{
+                                'likeActive': image4Clicked
+                            }"
+                            (click)="likeImage('image4')">
+                            </i>
+                            {{counterImage4}}
+                        </span>
+                        <span>
+                            <i class="fa fa-comment"></i>
+                            100
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end middle section -->
+    <hr>
+
+
+    <!-- start last section -->
+
+    <section class="searchAndNotfactionContainer">
+        <div class="containerOfsearch">
+            <div class="inputSearch">
+                <input type="text" placeholder="Search" class="formControl">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="bell">
+                <span>
+                    <i class="fa fa-bell"></i>
+                </span>
+            </div>
+            <div class="cloudDownload">
+                <span>
+                    <i class="fa fa-cloud-download"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="seeAllAndSuggestions">
+            <p class="suggestionsForYou">Suggestions For You</p>
+            <p class="SeeAll">See All</p>
+        </div>
+
+        <div class="followUS">
+            <div class="userPhoto">
+                <img src="assets/img/avatar.png">
+            </div>
+            <div class="userName">
+                <p>
+                    Ahmed <br>
+                    <span>
+                        @ahmedmo
+                    </span>
+                </p>
+            </div>
+            <div class="followButton">
+                <button>Follow</button>
+            </div>
+        </div>
+
+        <div class="followUS ">
+            <div class="userPhoto">
+                <img src="assets/img/avatarGirl.png">
+            </div>
+            <div class="userName">
+                <p>
+                    Ahmed <br>
+                    <span>
+                        @ahmedmo
+                    </span>
+                </p>
+            </div>
+            <div class="followButton">
+                <button class="unFollow">Follow</button>
+            </div>
+        </div>
+        <div class="followUS">
+            <div class="userPhoto">
+                <img src="assets/img/avatar.png">
+            </div>
+            <div class="userName">
+                <p>
+                    Ahmed <br>
+                    <span>
+                        @ahmedmo
+                    </span>
+                </p>
+            </div>
+            <div class="followButton">
+                <button>Follow</button>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <div style="position: relative">
+            <p class="LatestPostTitle">Latest Post Activity</p>
+
+            <div class="LatestPost">
+                <div class="LatestPostImage">
+                    <img src="assets/img/WhatsApp Image 2021-05-30 at 2.02.57 PM.jpeg">
+                </div>
+                <div class="LatestPostContent">
+                    <p>Minimalist <br>Stairs</p>
+                    <div class="likeAndComment">
+                        <span>
+                            <i class="fa fa-heart" 
+                            [ngClass]="{
+                                'likeActive': image5Clicked
+                            }"
+                            (click)="likeImage('image5')"
+                            ></i>
+                            {{counterImage5}}
+                        </span>
+                        <span>
+                            <i class="fa fa-comment"></i>
+                            100
+                        </span>
+                        <span>
+                            <i class="fa fa-bookmark"></i>
+                            100
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p class="seeAllPosts">See All Posts</p>
+        </div>
+
+        <div class="footerMenu">
+            <ul>
+                <li>About</li>
+                <li>Help</li>
+                <li>Terms</li>
+                <li>Popular</li>
+                <li>Language</li>
+            </ul>
+        </div>
+
+    </section>
+</div>

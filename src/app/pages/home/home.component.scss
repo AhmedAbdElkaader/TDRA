@@ -1,0 +1,372 @@
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+ ul li {
+    list-style: none;
+}
+
+hr{
+    margin:10px;
+     border-top: 1px solid #fff;
+     border-left:  1px solid #fff;
+}
+
+// start side bar style 
+
+.sideBar{
+    background: white;
+    width:20% !important;
+    
+}
+.sideBar .logo {
+    text-align: center;
+    padding-top: 15px
+}
+.sideBar .logo img{
+    width: 100px;
+}
+
+.sideBar .Menu .title{
+    margin-left: 10px;
+    font-weight: bold
+}
+.sideBar .Menu ul{
+    padding-left: 0
+}
+.sideBar .Menu ul li{
+    margin-top: 20px;
+    padding: 9px 0 9px 40px;
+    cursor: pointer
+}
+.sideBar .Menu ul li i{
+    color: gray;
+    margin-right: 5px
+}
+.sideBar .Menu ul .active {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.sideBar .Menu ul .active i {
+    color: mediumorchid;
+}
+
+.sideBar .account {
+    margin-left: 10px ;
+    margin-top: 30px;
+    
+}
+.sideBar .account .title {
+    font-weight: bold
+}
+.sideBar .account .accountImg{
+    border-radius: 50%;
+    width: 40px;
+    float: left;
+    margin-right:10px
+}
+.sideBar .account span{
+    color: lightgray
+}
+
+.sideBar .account .getCoffedAppImg {
+    width: 150px;
+    border-radius: 20px;
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    padding: 3px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+// end side bar
+
+
+// start section 2
+
+.midSection {
+    width:80%;
+}
+.midSection .storyOFuser {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content:center;
+    
+}
+.midSection .storyOFuser p {
+    margin-top: 5px;
+}
+.midSection .storyOFuser img {
+    border-radius: 50%;
+    width: 50px;
+}
+.midSection .storyOFuser div {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+.midSection .storyOFuser img {
+    border: 2px solid gray;
+    padding: 2px;
+}
+.midSection .storyOFuser .unShowStory img{
+    border: 2px solid mediumorchid;
+}
+
+.midSection .menuFeeds ul{
+    display: flex;
+    padding-left: 0;
+    justify-content: flex-start;
+    flex-direction:row-reverse;
+}
+.midSection .menuFeeds ul li {
+    margin-right: 15px;
+    color: gray;
+    cursor: pointer;
+}
+.midSection .menuFeeds ul .active{
+    color: mediumorchid
+}
+.midSection .menuFeeds p {
+    float: left;
+    margin-top: 0;
+    margin-left:20px;
+    font-weight: bold
+}
+
+
+.FeedsContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20px;
+    
+}
+
+.FeedsContent .item .photoIsLike{
+    width:330px;
+    border-radius: 20px;
+    border: 2px solid #fff
+}
+
+.itemOfFeeds{
+    display: flex;
+}
+
+.itemOfFeeds .userPhoto img{
+    width: 30px;
+    border-radius: 50%
+}
+.itemOfFeeds .likeAndComment {
+    margin-top: 10px;
+    color: #495057;
+    cursor: pointer
+
+}
+.itemOfFeeds .userName p{
+    margin-top: 9px;
+    margin-left: 5px
+}
+
+.likeAndComment:last-of-type {
+    margin-left: auto;
+  }
+
+
+//   end section 2
+
+
+
+
+// start section 3
+
+.searchAndNotfactionContainer {
+    width: 500px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerOfsearch {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.searchAndNotfactionContainer .inputSearch {
+    position: relative;
+}
+.searchAndNotfactionContainer .inputSearch input{
+    padding: 10px 0.75rem;
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius:30px;
+    text-align: center;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+.searchAndNotfactionContainer .fa-search {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    font-size: 20px;
+    color: #b3b4b7;
+}
+.searchAndNotfactionContainer .bell{
+    border-radius: 50%;
+    background: transparent;
+    padding: 14px 15px;
+    color: lightgrey;
+    border: 1px solid #a6a4a4;
+   cursor: pointer
+}
+.searchAndNotfactionContainer .cloudDownload {
+    border-radius: 50%;
+    background:lightskyblue;
+    padding: 14px 15px;
+    color: white;
+    cursor: pointer
+}
+
+.searchAndNotfactionContainer .seeAllAndSuggestions{
+    display: flex;
+    margin-top: 20px
+}
+.searchAndNotfactionContainer .SeeAll:last-of-type {
+    margin-left: auto;
+  }
+
+  .searchAndNotfactionContainer .SeeAll {
+      margin-right: 33px;
+      color: mediumorchid;
+      cursor: pointer
+
+  }
+
+  .searchAndNotfactionContainer .suggestionsForYou{
+      margin-left: 10px
+  }
+
+  .searchAndNotfactionContainer .followUS {
+      display: flex;
+      margin-left: 10px;
+  }
+
+  .searchAndNotfactionContainer .followUS .followButton:last-of-type {
+    margin-left: auto;
+  }
+  .searchAndNotfactionContainer .followUS .followButton {
+      margin-top: 5px;
+      margin-right: 30px;
+  }
+  .searchAndNotfactionContainer .followUS .followButton button{
+    padding: 8px 23px;
+    border-radius: 7px;
+    background: #af58e4;
+    color: white;
+    border: none;
+    cursor: pointer
+
+}
+.searchAndNotfactionContainer .followUS .followButton .unFollow{
+    background: #f8f3f3;
+    color: black;
+    border: 1px solid #a6a4a4
+}
+.searchAndNotfactionContainer .followUS .userPhoto img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:2px solid #fff;
+    padding:1px
+  }
+
+  .searchAndNotfactionContainer .followUS .userName p {
+      margin-top: 3px
+  }
+
+  .searchAndNotfactionContainer .followUS .userName p span {
+      color: #a6a4a4;
+  }
+
+
+  .searchAndNotfactionContainer .LatestPostTitle {
+      margin-left:20px
+  }
+
+
+//   Latest Post Activity
+  .LatestPost {
+      display: flex;
+      background: #fff;
+      padding: 20px 20px 60px 20px;
+      width: 250px;
+      margin: 0 auto;
+      border-radius:15px
+  }
+  .LatestPost .LatestPostImage img {
+      width: 100px;
+      border: 1px solid #fff
+  }
+  .LatestPost p {
+      margin-top: 0
+  }
+
+  .LatestPostContent {
+      display: flex;
+      flex-direction: column;
+      margin-left:25px;
+  }
+  .LatestPostContent .likeAndComment:last-of-type{
+      margin-top: auto
+  }
+  .LatestPost .likeAndComment span {
+    margin-right: 4px;
+    font-size: 12px;
+    color: #495057;
+    cursor: pointer
+  }
+
+   .seeAllPosts{
+    position: absolute;
+    color: mediumorchid;
+    bottom: 0;
+    right: 35%;
+    cursor: pointer
+  }
+// end Latest Post Activity
+
+
+
+
+// menu footer
+.footerMenu:last-of-type {
+    margin-top: auto;
+  }
+
+  .footerMenu ul{
+      display: flex;
+  }
+  .footerMenu ul li {
+      font-size: 12px;
+      margin-right:20px;
+      color: #a6a4a4
+  }
+// end menu footer
+
+
+//   when click
+
+.likeActive{
+    color: red
+}
